@@ -18,5 +18,5 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{md,css}]
+[*.{md,css,less}]
 indent_size = 1
