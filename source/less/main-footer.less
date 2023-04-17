@@ -4,7 +4,7 @@
 }
 
 .main-footer__wrapper {
-background-color: #ffffff;
+background-color: @white;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
@@ -31,8 +31,28 @@ justify-content: center;
 .main-footer__item {
  width: 48px;
  height: 48px;
- background-color: #81b3d2;
+ background-color: @blue;
  display: flex;
  justify-content: center;
  align-items: center;
 }
+
+@media (min-width: @tablet-width) {
+    width: 768px;
+    .main-footer__wrapper {
+        flex-direction: row;
+    }
+    .main-footer__list {
+        flex-direction: row;
+    }
+   }   
+
+   @media (min-width: @desktop-width) {
+    width: 1200px;
+    .main-footer__wrapper {
+        flex-direction: row;
+    }
+    .main-footer__list {
+        flex-direction: row;
+    }
+   } 
