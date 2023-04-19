@@ -2,24 +2,39 @@
  min-height: 56px;
  background-color: @white;
  color: @black;
- min-width: 320;;
+ min-width: 320;
+ @media (min-width: @tablet-width) {
+  width: 768px;
+ }
+ 
+ @media (min-width: @desktop-width) {
+  width: 1200px;
+ }
 }
 
-@media (min-width: @tablet-width) {
- width: 768px;
+.main-nav__toggle {
+ width: 23px;
+ height: 22px;
+ cursor: pointer;
+ @media (min-width: @tablet-width) {
+  display: none;
+ }
+ 
+ @media (min-width: @desktop-width) {
+  display: none;
+ }
 }
 
-@media (min-width: @desktop-width) {
- width: 1200px;
-}
-
-
-@media (min-width: @tablet-width) {
 .main-nav__wrapper {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- align-items: center;
+ @media (min-width: @tablet-width) {
+  display: flex;
+ justify-content: center;
+ }
+ 
+ @media (min-width: @desktop-width) {
+  display: flex;
+ justify-content: center;
+ }
 }
 
 .main-nav__list {
@@ -27,13 +42,24 @@
 }
 
 .main-nav__list {
- list-style-type: none;
- margin: 0;
- padding: 0;
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: space-between;
+ @media (min-width: @tablet-width) {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+ }
+ @media (min-width: @desktop-width) {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+ }
 }
 
 .main-nav__link {
@@ -47,41 +73,4 @@
  cursor: pointer;
 }
 
-.main-nav__link:nth-child(odd) {
-    margin-right: 75px;
-}
-}
 
-@media (min-width: @desktop-width) {
-    .main-nav__wrapper {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     align-items: center;
-    }
-
-    .main-nav__list {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: space-between;
-    }
-
-    .main-nav__link {
-     font-family: "PT Sans", Arial, Helvetica, sans-serif;
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 21px;
-     color: @black;
-     text-transform: uppercase;
-     text-decoration: none;
-     cursor: pointer;
-    }
-
-    .main-nav__link:nth-child(odd) {
-        margin-right: 162px;
-    }
-    }

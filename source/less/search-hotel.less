@@ -1,5 +1,12 @@
 .search-hotel {
  min-width: 320px;
+ @media (min-width: @tablet-width) {
+  width: 768px;
+ }   
+ 
+ @media (min-width: @desktop-width) {
+  width: 1200px;
+ } 
 }
 
 .search-hotel__wrapper {
@@ -10,14 +17,6 @@ justify-content: center;
 align-items: center;
 background-color: @white;
 }
-
-@media (min-width: @tablet-width) {
-    width: 768px;
-   }   
-
-   @media (min-width: @desktop-width) {
-    width: 1200px;
-   } 
 
 .search-hotel__title {
  font-family: "PT Sans", Arial, Helvetica, sans-serif;

@@ -1,5 +1,12 @@
 .photo-block {
  min-width: 320px;
+ @media (min-width: @tablet-width) {
+  width: 768px;
+ }   
+ 
+ @media (min-width: @desktop-width) {
+  width: 1200px;
+ } 
 }
 
 .photo-block__list {
@@ -8,6 +15,17 @@
  flex-wrap: wrap;
  flex-direction: column;
  align-items: center;
+ padding: 0;
+ margin: 0;
+ @media (min-width: @tablet-width) {
+   display: grid;
+   grid-template-columns: 324px 324px;
+ }  
+
+ @media (min-width: @desktop-width) {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+} 
 }
 
 .photo-block__item {
@@ -27,7 +45,7 @@
  font-weight: 700;
  font-size: 14px;
  line-height: 21px;
- color: #000000;
+ color: @black;
  text-transform: uppercase;
  margin-bottom: 10px;
 }
@@ -37,13 +55,31 @@
  font-weight: 400;
  font-size: 14px;
  line-height: 21px;
- color: #333333;
+ color: @gray;
  margin-bottom: 11px;
+}
+
+.photo-block__main-container {
+ @media (min-width: @tablet-width) {
+  display: flex;
+}  
+
+@media (min-width: @desktop-width) {
+ display: flex;
+} 
 }
 
 .photo-block__likes-container {
  display: flex;
  flex-wrap: wrap;
+ align-items: center;
+ @media (min-width: @tablet-width) {
+  background-color: #f2f2f2;
+}  
+
+@media (min-width: @desktop-width) {
+ background-color: rgba(0, 0, 0, 0);
+} 
 }
 
 .photo-block__counter {
@@ -60,23 +96,5 @@
  font-weight: 700;
  font-size: 14px;
  line-height: 21px;
- color: #000000;
+ color: @black;
 }
-
-@media (min-width: @tablet-width) {
-    width: 768px;
-    .photo-block__list {
-        display: grid;
-        grid-template-columns: 324px 324px;
-    }
-    .photo-block__likes-container {
-        background-color: #f2f2f2;
-    }
-   }   
-
-   @media (min-width: @desktop-width) {
-    width: 1200px;
-    .photo-block__likes-container {
-        background-color: rgba(0, 0, 0, 0);
-    }
-   } 

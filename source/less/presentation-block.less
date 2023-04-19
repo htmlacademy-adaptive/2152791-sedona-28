@@ -4,6 +4,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+   }   
+  
+   @media (min-width: @desktop-width) {
+    width: 1200px;
+   } 
 }
 
 .presentation-block__title {
@@ -28,12 +35,12 @@
 
 .presentation-block__image {
  margin-top: 38px;
+ position: relative;
 }
 
-@media (min-width: @tablet-width) {
-  width: 768px;
- }   
+.presentation-block__icon {
+ position: absolute;
+ top: 65%;
+ right: 65%;
+}
 
- @media (min-width: @desktop-width) {
-  width: 1200px;
- } 
