@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -37,16 +38,17 @@
   <main class="main-container">
     <section class="intro">
       <img class="intro__image" src="./img/sedona.svg" width="229" height="39" alt="Седона.">
-  </section>
+  </section> 
   <section class="reviews-block">
       <h1 class="reviews-block__title">Оставьте свой отзыв</h1>
       <p class="reviews-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </section>
   <section class="feedback">
       <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="feedback__form-name-contacts">
         <div class="feedback__form-name">
           <h2 class="feedback__form-name-title">Представьтесь:</h2>
-          <fieldset class="feedback__form-name-field">
+          <fieldset class="feedback__form-name-field"> 
             <div class="feedback__form-name-container">
               <label class="feedback__name" for="your-name">ИМЯ*:</label>
               <input class="feedback__field" id="your-name" name="your-name" type="text" placeholder="Пётр" required>
@@ -74,12 +76,11 @@
                   </svg>
               </button>
               </div>
-            </div>
-            <div class="feedback__form-contacts">
+            <div class="feedback__form-contacts-container">
               <label class="feedback__form-contacts-email" for="contacts-email">Электронная почта*:</label>
-              <div class="feedback__form-contacts-container">
-              <input class="feedback__form-contacts-container-field" id="contacts-email" name="contacts-email" type="email" placeholder="Введите e-mail" required>
-              <button class="feedback__form-contacts-container-button-email" type="button">
+              <div class="feedback__form-contacts-block">
+              <input class="feedback__form-contacts-block-field" id="contacts-email" name="contacts-email" type="email" placeholder="Введите e-mail" required>
+              <button class="feedback__form-contacts-block-button-email" type="button">
                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
                   </svg>
@@ -87,6 +88,7 @@
               </div>
             </div>
           </fieldset>
+          </div>
           </div>
           <div class="impression">
           <h4 class="impression__title">Ваше Общее впечатление:</h4>
@@ -137,12 +139,12 @@
           </div>
       </form>
   </section>
-  <section class="failure-pop-up">
+  <section class="failure-pop-up visually-hidden">
       <h7 class="failure-pop-up__title">Что-то пошлоне так!</h7>
       <p class="failure-pop-up__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="failure-pop-up__button button" type="button">Ок</button>
   </section>
-  <section class="succes-pop-up">
+  <section class="succes-pop-up visually-hidden">
       <h8 class="succes-pop-up__title">Ваш отзыв отправлен!</h8>
       <p class="succes-pop-up__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
       <button class="succes-pop-up__upbutton button" type="button">ЗАКРЫТЬ ОКНО</button>
