@@ -3,18 +3,25 @@
  justify-content: center;
  background-color: @white;
  min-width: 320px;
- position: relative;
+ margin-top: 55px;
  @media (min-width: @tablet-width) {
   width: 768px;
- }   
- 
+ }
+
  @media (min-width: @desktop-width) {
   width: 1200px;
- } 
+ }
 }
 
-.map__icon {
- position: absolute;
- right: 50%;
- bottom: 50%;
+.map-image {
+ width: 320px;
+ border: none;
+ display: block;
+ @media (min-width: @tablet-width) {
+  width: 768px;
+ }
+
+ @media (min-width: @desktop-width) {
+  width: 1200px;
+ }
 }
