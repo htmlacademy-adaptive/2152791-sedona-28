@@ -31,14 +31,47 @@
         </ul>
       </div>
       <button class="main-nav__toggle" type="button">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <div class="main-nav__open">
+        <ul class="main-nav__open-list">
+          <li class="main-nav__open-item">
+            <a class="main-nav__open-link">Главная</a>
+            <button class="main-nav__open-button" type="button"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+              </svg>
+            </button>
+          </li>
+          <li class="main-nav__open-item">
+            <a class="main-nav__open-link">Фото и видео</a>
+          </li>
+          <li class="main-nav__open-item">
+            <a class="main-nav__open-link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__open-item">
+            <a class="main-nav__open-link">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container">
-    <section class="intro">
-      <img class="intro__image" src="./img/sedona.svg" width="229" height="39" alt="Седона.">
-  </section>
+    <section class="intro-form">
+      <img class="intro__image-form" src="./img/sedona.svg" width="229" height="39" alt="Седона.">
+      <div class="intro__wrapper-form">
+        <svg width="600" height="57" viewBox="0 0 600 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white"/>
+          </svg>
+          <svg width="600" height="57" viewBox="0 0 600 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M350.4 23.7V0L0 57H350.4H599.9V0L350.4 23.7Z" fill="white"/>
+            </svg>
+      </div>
+   </section>
   <section class="reviews-block">
       <h1 class="reviews-block__title">Оставьте свой отзыв</h1>
       <p class="reviews-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -94,15 +127,15 @@
           <h4 class="impression__title">Ваше Общее впечатление:</h4>
           <fieldset class="impression__field">
             <div class="impression__field-container">
-              <input class="impression__field-input" type="radio" id="positive" name="positive" checked>
+              <input class="impression__field-input visually-hidden" type="radio" id="positive" name="positive" checked>
               <label class="impression__field-value" for="positive"><span class="control-mark"></span>Скорее положительное</label>
             </div>
             <div class="impression__field-container">
-              <input class="impression__field-input" type="radio" id="negative" name="negative">
+              <input class="impression__field-input visually-hidden" type="radio" id="negative" name="negative">
               <label class="impression__field-value" for="negative"><span class="control-mark"></span>Скорее отрицательное</label>
             </div>
             <div class="impression__field-container">
-              <input class="impression__field-input" type="radio" id="neutral" name="neutral">
+              <input class="impression__field-input visually-hidden" type="radio" id="neutral" name="neutral">
               <label class="impression__field-value" for="neutral"><span class="control-mark"></span>Затрудняюсь ответить</label>
             </div>
           </fieldset>
@@ -111,31 +144,31 @@
           <h5 class="attractions__title">Посещенные достопримечательности:</h5>
           <fieldset class="attractions__field">
             <div class="attractions__field-container">
-              <input class="attractions-input" type="checkbox" id="devil-bridge" name="devil-bridge" checked>
+              <input class="attractions-input visually-hidden" type="checkbox" id="devil-bridge" name="devil-bridge" checked>
               <label class="attractions-value" for="devil-bridge"><span class="control-mark-checkbox"></span>Мост Дьявола</label>
             </div>
             <div class="attractions__field-container">
-              <input class="attractions-input" type="checkbox" id="bell-rock" name="bell-rock" checked>
+              <input class="attractions-input visually-hidden" type="checkbox" id="bell-rock" name="bell-rock" checked>
               <label class="attractions-value" for="bell-rock"><span class="control-mark-checkbox"></span>Гора-Колокол</label>
             </div>
             <div class="attractions__field-container">
-              <input class="attractions-input" type="checkbox" id="slide-park" name="slide-park" checked>
+              <input class="attractions-input visually-hidden" type="checkbox" id="slide-park" name="slide-park" checked>
               <label class="attractions-value" for="slide-park"><span class="control-mark-checkbox"></span>Слайд-парк</label>
             </div>
             <div class="attractions__field-container">
-              <input class="attractions-input" type="checkbox" id="red-rocks" name="red-rocks">
+              <input class="attractions-input visually-hidden" type="checkbox" id="red-rocks" name="red-rocks">
               <label class="attractions-value" for="red-rocks"><span class="control-mark-checkbox"></span>Красные скалы</label>
             </div>
           </fieldset>
           </div>
           <div class="emotions">
           <h6 class="emotions__title">Опишите свои эмоции:</h6>
-          <fieldset class="emotions__fieldset">
               <label class="emotions" for="emotions"></label>
               <input class="emotions__field" id="emotions" name="emotions" type="text" placeholder="Опишите подробно все свои восторги" required>
-          </fieldset>
+          <div class="feedback__emotions">
           <button class="feedback__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <p class="feedback__add">* — обязательные поля</p>
+          </div>
           </div>
       </form>
   </section>
