@@ -42,6 +42,7 @@ justify-content: space-around;
  display: flex;
  align-items: center;
  flex-wrap: wrap;
+ cursor: pointer;
 }
 
 .main-footer__dev {
@@ -52,6 +53,14 @@ justify-content: space-around;
  color: @black;
  margin-right: 12px;
  text-transform: uppercase;
+}
+
+.main-footer__copyright:hover .main-footer__dev {
+  color: #81b3d2;
+}
+
+.main-footer__copyright:active .main-footer__dev {
+  color: #b3b3b3;
 }
 
 .main-footer__list {
@@ -73,8 +82,18 @@ justify-content: space-around;
  display: flex;
  justify-content: center;
  align-items: center;
+ cursor: pointer;
 }
 
 .main-footer__item:not(:last-child) {
   margin-right: 6px;
+}
+
+.main-footer__item:hover {
+  background-color: #669ec0;
+}
+
+.main-footer__item:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
