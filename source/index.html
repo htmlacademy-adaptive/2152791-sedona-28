@@ -93,7 +93,11 @@
           <span class="advantages__number">- №1 -</span>
           <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="advantages__image" src="./img/photo-city.jpg" width="512" height="256" alt="Фото города.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg">
+          <img class="advantages__image" src="./img/photo-city.jpg" width="512" height="256" srcset="./img/photo-city@2x.jpg 2x" alt="Фото города.">
+        </picture>
       </div>
       <ul class="advantages__upper-list">
         <li class="advantages__upper-item">
@@ -119,7 +123,7 @@
         </li>
       </ul>
       <div class="devil-bridge">
-        <img class="devil-bridge__image" src="./img/devil-bridge.jpg" width="512" height="256" alt="Мост дьявола.">
+        <img class="devil-bridge__image" src="./img/devil-bridge.jpg" width="512" height="256" srcset="./img/devil-bridge@2x.jpg 2x" alt="Мост дьявола.">
         <div class="devil-bridge__description-container">
           <h2 class="devil-bridge__title">Там есть мост дьявола</h2>
           <span class="devil-bridge__number">- №2 -</span>
