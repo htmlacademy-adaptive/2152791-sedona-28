@@ -68,10 +68,11 @@
   <main class="main-container">
     <section class="intro">
       <div class="intro__wrapper">
-        <img class="intro__wrapper-image" src="./img/welcome.svg" width="188" height="45" alt="Добро пожаловать.">
-        <img class="intro__wrapper-image" src="./img/to-the-gorgeous.svg" width="256" height="28" alt="В великолепную.">
-        <img class="intro__wrapper-image" src="./img/sedona.svg" width="461" height="79" alt="Седону.">
-        <img class="intro__wrapper-image" src="./img/canyon-sucks.svg" width="294" height="79" alt="Потому что гранд каньон хуже.">
+        <picture>
+          <source media="(min-width: 768px)" width="460" height="350" srcset="./img/intro/intro-big.svg">
+          <img class="intro__image" width="282" height="214" src="./img/intro/intro-small.svg"
+            alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+        </picture>
         <div class="intro__wrapper-add">
           <svg width="600" height="57" viewBox="0 0 600 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white" />
@@ -94,9 +95,12 @@
           <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg">
-          <img class="advantages__image" src="./img/photo-city.jpg" width="512" height="256" srcset="./img/photo-city@2x.jpg 2x" alt="Фото города.">
+          <source media="(min-width: 1200px)"
+            srcset="./img/advantages/real-city-desktop.jpg, ./img/advantages/real-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/advantages/real-city-tablet.jpg, ./img/advantages/real-city-tablet@2x.jpg 2x">
+          <img class="advantages__image" src="./img/advantages/real-city-mobile.jpg" width="512" height="256"
+            srcset="./img/advantages/real-city-mobile@2x.jpg 2x" alt="Фото города.">
         </picture>
       </div>
       <ul class="advantages__upper-list">
@@ -123,7 +127,14 @@
         </li>
       </ul>
       <div class="devil-bridge">
-        <img class="devil-bridge__image" src="./img/devil-bridge.jpg" width="512" height="256" srcset="./img/devil-bridge@2x.jpg 2x" alt="Мост дьявола.">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/advantages/devil-bridge-desktop.jpg, ./img/advantages/devil-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/advantages/devil-bridge-tablet.jpg, ./img/advantages/devil-bridge-tablet@2x.jpg 2x">
+          <img class="devil-bridge__image" src="./img/advantages/devil-bridge-mobile.jpg" width="512" height="256"
+            srcset="./img/devil-bridge-mobile@2x.jpg 2x" alt="Мост дьявола.">
+        </picture>
         <div class="devil-bridge__description-container">
           <h2 class="devil-bridge__title">Там есть мост дьявола</h2>
           <span class="devil-bridge__number">- №2 -</span>
