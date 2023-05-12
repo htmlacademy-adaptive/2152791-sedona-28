@@ -3,38 +3,40 @@
   background-color: @white;
   color: @black;
   width: 320px;
+
   @media (min-width: @tablet-width) {
     width: 768px;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 1200px;
-   }
- }
+  }
+}
 
- .main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 56px;
   position: relative;
- }
+}
 
- .main-header__logo {
+.main-header__logo {
   position: absolute;
   top: 0;
   left: 23%;
   z-index: 1;
+
   @media (min-width: @tablet-width) {
     left: 38%;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     left: 43%;
-   }
- }
+  }
+}
 
- .main-nav__toggle {
+.main-nav__toggle {
   width: 23px;
   height: 22px;
   margin-right: 20px;
@@ -45,37 +47,40 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     display: none;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     display: none;
-   }
- }
+  }
+}
 
- .main-nav__toggle:hover + .main-nav__open {
+.main-nav__toggle:hover+.main-nav__open {
   display: block;
- }
+}
 
- .main-nav__wrapper {
-   min-height: 56px;
-   width: 320px;
-   @media (min-width: @tablet-width) {
+.main-nav__wrapper {
+  min-height: 56px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
     width: 768px;
     display: flex;
     justify-content: space-between;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 1200px;
     display: flex;
     justify-content: space-between;
-   }
- }
+  }
+}
 
- .main-nav__list {
+.main-nav__list {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -84,9 +89,9 @@
     width: 306px;
     margin: 0;
     padding: 0;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,8 +99,8 @@
     width: 480px;
     margin: 0;
     padding: 0;
-   }
- }
+  }
+}
 
 .main-nav__item {
   @media (min-width: @tablet-width) {
@@ -103,36 +108,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+  }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+  }
 }
 
- .main-nav__link {
- font-family: "PT Sans", Arial, Helvetica, sans-serif;
- font-weight: 700;
- font-size: 14px;
- line-height: 21px;
- color: black;
- text-transform: uppercase;
- text-decoration: none;
- cursor: pointer;
- }
+.main-nav__link {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
 
- .main-nav__link:hover {
+.main-nav__link:hover {
   color: #81b3d2;
- }
+}
 
- .main-nav__link:active {
+.main-nav__link:active {
   color: #b3b3b3;
- }
+}
 
- .main-nav__open {
+.main-nav__open {
   background-color: #81B3D2;
   width: 320px;
   z-index: 2;
@@ -140,34 +145,34 @@
   top: 0;
   left: 0;
   display: none;
- }
+}
 
- .main-nav__open-list {
+.main-nav__open-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
- }
+}
 
- .main-nav__open-item {
+.main-nav__open-item {
   min-height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
- }
+}
 
- .main-nav__open-item:hover {
+.main-nav__open-item:hover {
   background-color: #669ec0;
- }
+}
 
- .main-nav__open-item:active {
+.main-nav__open-item:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
- }
+}
 
- .main-nav__open-link {
+.main-nav__open-link {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -175,9 +180,9 @@
   color: @white;
   text-transform: uppercase;
   cursor: pointer;
- }
+}
 
- .main-nav__open-button {
+.main-nav__open-button {
   background-color: #81B3D2;
   border: none;
   width: 23px;
@@ -185,4 +190,4 @@
   position: relative;
   left: 85px;
   cursor: pointer;
- }
+}
