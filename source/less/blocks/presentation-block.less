@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -56,4 +57,20 @@
     width: 800px;
     height: 500px;
   }
+}
+
+.presentation-block__icon {
+ position: absolute;
+ top: 285px;
+ left: 140px;
+
+ @media (min-width: @tablet-width) {
+  top: 60%;
+ left: 50%;
+}
+
+@media (min-width: @desktop-width) {
+  top: 60%;
+ left: 50%;
+}
 }
