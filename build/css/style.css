@@ -366,6 +366,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   .presentation-block {
@@ -420,6 +421,23 @@
   .presentation-block__image {
     width: 800px;
     height: 500px;
+  }
+}
+.presentation-block__icon {
+  position: absolute;
+  top: 285px;
+  left: 140px;
+}
+@media (min-width: 768px) {
+  .presentation-block__icon {
+    top: 60%;
+    left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .presentation-block__icon {
+    top: 60%;
+    left: 50%;
   }
 }
 .intro-catalog {
@@ -743,6 +761,9 @@
 .main-nav__link:active {
   color: #b3b3b3;
 }
+.main-nav__link--active {
+  color: #766357;
+}
 .main-nav__open {
   background-color: #81B3D2;
   width: 320px;
@@ -886,6 +907,8 @@
 }
 .main-footer__link-icon {
   fill: #FFFFFF;
+  width: 24px;
+  height: 24px;
 }
 .main-footer__item:not(:last-child) {
   margin-right: 6px;
@@ -1966,7 +1989,7 @@
   background-color: #f2f2f2;
   top: 30%;
   right: 25%;
-  background-image: url("../img/tick.svg.svg");
+  background-image: url("../img/icons/tick.svg");
 }
 .emotions {
   display: flex;
