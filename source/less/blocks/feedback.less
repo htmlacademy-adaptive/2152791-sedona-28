@@ -449,12 +449,23 @@
   background-color: #d5d5d5;
 }
 
-.attractions-input:checked+label .control-mark-checkbox::before {
+.control-mark-checkbox::before {
+  background-color: #f2f2f2;
+}
+
+.attractions-value:hover .control-mark-checkbox::before {
+  background-color: #e5e5e5;
+}
+
+.attractions-value:active .control-mark-checkbox::before {
+  background-color: #d5d5d5;
+}
+
+.attractions-input:checked + label .control-mark-checkbox::before {
   position: absolute;
   content: "";
   width: 22px;
   height: 16px;
-  background-color: #f2f2f2;
   top: 30%;
   right: 25%;
   background-image: url("../img/icons/tick.svg");
