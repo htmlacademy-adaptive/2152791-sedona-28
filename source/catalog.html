@@ -70,13 +70,13 @@
     <section class="intro-catalog">
       <picture>
         <source media="(min-width: 768px)" width="457" height="78" srcset="./img/icons/sedona-big.svg">
-        <img class="intro__image-catalog" width="230" height="40" src="./img/icons/sedona-small.svg" alt="Седона.">
+        <img class="intro-catalog__image" width="230" height="40" src="./img/icons/sedona-small.svg" alt="Седона.">
       </picture>
-      <div class="intro__wrapper-catalog">
-        <svg class="intro__wrapper-add-icon" width="600" height="57">
+      <div class="intro-catalog__wrapper">
+        <svg class="intro-catalog__wrapper-icon" width="600" height="57">
           <use xlink:href="./img/sprite.svg#left-arrow"></use>
         </svg>
-        <svg class="intro__wrapper-add-icon" width="600" height="57">
+        <svg class="intro-catalog__wrapper-icon" width="600" height="57">
           <use xlink:href="./img/sprite.svg#right-arrow"></use>
         </svg>
       </div>
@@ -94,7 +94,7 @@
               srcset="./img/catalog/expance-desktop.jpg, ./img/catalog/expance-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/expance-tablet.jpg, ./img/catalog/expance-tablet@2x.jpg 2x">
-            <img class="photo-block__image photo-block__image-first" src="./img/catalog/expance-mobile.jpg" widht="280"
+            <img class="photo-block__image photo-block__image-first" src="./img/catalog/expance-mobile.jpg" width="280"
               height="280" srcset="./img/catalog/expance-mobile@2x.jpg 2x" alt="Неродные просторы.">
           </picture>
           <div class="photo-block__main-container">
@@ -117,7 +117,7 @@
               srcset="./img/catalog/vegetation-desktop.jpg, ./img/catalog/vegetation-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/vegetation-tablet.jpg, ./img/catalog/vegetation-tablet@2x.jpg 2x">
-            <img class="photo-block__image" src="./img/catalog/vegetation-mobile.jpg" widht="280" height="280"
+            <img class="photo-block__image" src="./img/catalog/vegetation-mobile.jpg" width="280" height="280"
               srcset="./img/catalog/vegetation-mobile@2x.jpg 2x" alt="Местная растительность.">
           </picture>
           <div class="photo-block__main-container">
@@ -140,7 +140,7 @@
               srcset="./img/catalog/nord-desktop.jpg, ./img/catalog/nord-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/nord-tablet.jpg, ./img/catalog/nord-tablet@2x.jpg 2x">
-            <img class="photo-block__image" src="./img/catalog/nord-mobile.jpg" widht="280" height="280"
+            <img class="photo-block__image" src="./img/catalog/nord-mobile.jpg" width="280" height="280"
               srcset="./img/catalog/nord-mobile@2x.jpg 2x" alt="Дорога на север.">
           </picture>
           <div class="photo-block__main-container">
@@ -163,7 +163,7 @@
               srcset="./img/catalog/devil-catalog-desktop.jpg, ./img/catalog/devil-catalog-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/devil-catalog-tablet.jpg, ./img/catalog/devil-catalog-tablet@2x.jpg 2x">
-            <img class="photo-block__image" src="./img/catalog/devil-catalog-mobile.jpg" widht="280" height="280"
+            <img class="photo-block__image" src="./img/catalog/devil-catalog-mobile.jpg" width="280" height="280"
               srcset="./img/catalog/devil-catalog-mobile@2x.jpg 2x" alt="Мост дьявола.">
           </picture>
           <div class="photo-block__main-container">
@@ -186,18 +186,17 @@
       <h2 class="presentation-block__title">Все еще сомневаетесь?</h2>
       <p class="presentation-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
         в очередной раз!</p>
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/catalog/video-desktop.jpg, ./img/catalog/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="./img/catalog/video-tablet.jpg, ./img/catalog/video-tablet@2x.jpg 2x">
-          <img class="presentation-block__image" src="./img/catalog/video-mobile.jpg" width="280" height="177"
-            srcset="./img/catalog/video-mobile@2x.jpg 2x" alt="Видео.">
-        </picture>
-        <svg class="presentation-block__icon" width="48"
-                  height="54">
-                  <use xlink:href="./img/sprite.svg#video"></use>
-        </svg>
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="./img/catalog/video-desktop.jpg, ./img/catalog/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="./img/catalog/video-tablet.jpg, ./img/catalog/video-tablet@2x.jpg 2x">
+        <img class="presentation-block__image" src="./img/catalog/video-mobile.jpg" width="280" height="177"
+          srcset="./img/catalog/video-mobile@2x.jpg 2x" alt="Видео.">
+      </picture>
+      <svg class="presentation-block__icon" width="48" height="54">
+        <use xlink:href="./img/sprite.svg#video"></use>
+      </svg>
     </section>
   </main>
   <footer class="main-footer">
