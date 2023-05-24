@@ -53,7 +53,7 @@
   line-height: 26px;
   color: @white;
   text-transform: uppercase;
-  margin-top: 33px;
+  margin-top: 56px;
   margin-bottom: 11px;
   text-align: center;
 
@@ -136,6 +136,7 @@
   align-items: flex-start;
   margin-top: 25px;
   width: 320px;
+  min-height: 113px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -148,10 +149,15 @@
   }
 }
 
+.advantages__upper-item:first-child {
+  margin-top: 23px;
+}
+
+
 .advantages__upper-block {
   display: flex;
   align-items: center;
-  margin-left: 18px;
+  margin-left: 24px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -164,6 +170,18 @@
 
 .advantages__upper-icon {
   fill: #81b3d2;
+  width: 40px;
+  height: 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 80px;
+    height: 73px;
+  }
 }
 
 .advantages__upper-title {
@@ -174,7 +192,7 @@
   color: @black;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 7px;
+  margin-bottom: 0;
 }
 
 .advantages__upper-description {
@@ -183,11 +201,12 @@
   font-size: 14px;
   line-height: 21px;
   color: @gray;
-  margin-bottom: 3px;
   text-transform: uppercase;
   text-align: left;
-  margin-left: 95px;
   width: 273px;
+  margin-left: 65px;
+  margin-top: 16px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -311,6 +330,7 @@
   background-color: #eeeeee;
   margin: 0;
   padding: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -328,6 +348,9 @@
   align-items: center;
   justify-content: center;
   width: 320px;
+  min-height: 117px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -346,8 +369,8 @@
   font-size: 18px;
   line-height: 26px;
   color: @black;
-  margin-bottom: 25px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 0;
   text-transform: uppercase;
   text-align: center;
 
@@ -366,7 +389,7 @@
   font-size: 14px;
   line-height: 21px;
   color: @gray;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .advantages__lower-description {
@@ -375,10 +398,12 @@
   font-size: 14px;
   line-height: 21px;
   color: @gray;
-  margin-bottom: 28px;
+  margin-bottom: 0;
   text-transform: uppercase;
   text-align: center;
   width: 268px;
+  margin-top: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 190px;
