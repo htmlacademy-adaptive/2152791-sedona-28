@@ -70,13 +70,13 @@
     <section class="intro-form">
       <picture>
         <source media="(min-width: 768px)" width="457" height="78" srcset="./img/icons/sedona-big.svg">
-        <img class="intro__image-form" width="230" height="40" src="./img/icons/" alt="Седона.">
+        <img class="intro-form__image" width="230" height="40" src="./img/icons/" alt="Седона.">
       </picture>
-      <div class="intro__wrapper-form">
-        <svg class="intro__wrapper-add-icon" width="600" height="57">
+      <div class="intro-form__wrapper">
+        <svg class="intro-form__wrapper-icon" width="600" height="57">
           <use xlink:href="./img/sprite.svg#left-arrow"></use>
         </svg>
-        <svg class="intro__wrapper-add-icon" width="600" height="57">
+        <svg class="intro-form__wrapper-icon" width="600" height="57">
           <use xlink:href="./img/sprite.svg#right-arrow"></use>
         </svg>
       </div>
@@ -120,7 +120,6 @@
                     <svg class="feedback__form-contacts-block-button-phone-icon" width="18" height="18">
                       <use xlink:href="./img/sprite.svg#phone"></use>
                     </svg>
-                    </svg>
                   </button>
                 </div>
                 <div class="feedback__form-contacts-container">
@@ -135,6 +134,7 @@
                     </button>
                   </div>
                 </div>
+              </div>
             </fieldset>
           </div>
         </div>
@@ -142,7 +142,8 @@
           <h4 class="impression__title">Ваше Общее впечатление:</h4>
           <fieldset class="impression__field">
             <div class="impression__field-container">
-              <input class="impression__field-input visually-hidden" type="radio" id="positive" name="impression" checked>
+              <input class="impression__field-input visually-hidden" type="radio" id="positive" name="impression"
+                checked>
               <label class="impression__field-value" for="positive"><span class="control-mark"></span>Скорее
                 положительное</label>
             </div>
@@ -188,7 +189,7 @@
         <div class="emotions">
           <h6 class="emotions__title">Опишите свои эмоции:</h6>
           <label class="emotions" for="emotions"></label>
-          <textarea class="emotions__field" id="emotions" name="emotions" type="text"
+          <textarea class="emotions__field" id="emotions" name="emotions"
             placeholder="Опишите подробно все свои восторги" required></textarea>
           <div class="feedback__emotions">
             <button class="feedback__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -198,15 +199,16 @@
       </form>
     </section>
     <section class="failure-pop-up visually-hidden">
-      <h7 class="failure-pop-up__title">Что-то пошлоне так!</h7>
+      <h6 class="failure-pop-up__title">Что-то пошлоне так!</h6>
       <p class="failure-pop-up__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="failure-pop-up__button button" type="button">Ок</button>
     </section>
     <section class="succes-pop-up visually-hidden">
-      <h8 class="succes-pop-up__title">Ваш отзыв отправлен!</h8>
+      <h6 class="succes-pop-up__title">Ваш отзыв отправлен!</h6>
       <p class="succes-pop-up__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
       <button class="succes-pop-up__upbutton button" type="button">ЗАКРЫТЬ ОКНО</button>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
